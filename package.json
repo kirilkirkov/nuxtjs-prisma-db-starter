@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prisma": "prisma",
+    "prisma:seed": "dotenv -e .env.local -- ts-node --compiler-options '{\"module\": \"commonjs\"}' prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "dotenv-cli": "^7.3.0",
+    "nuxt": "^3.10.1",
+    "prisma": "^5.9.1",
+    "ts-node": "^10.9.2",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.3"
+  }
+}
